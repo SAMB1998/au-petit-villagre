@@ -3,6 +3,7 @@ import {ActivatedRoute} from '@angular/router';
 import {FooterComponent} from "../footer/footer.component";
 import {HeaderComponent} from "../header/header.component";
 import {ProductService} from "../services/product.service";
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-product',
@@ -10,7 +11,8 @@ import {ProductService} from "../services/product.service";
   standalone: true,
   imports: [
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    NgIf
   ],
   styleUrls: ['./product.component.css']
 })
